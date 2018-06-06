@@ -103,6 +103,12 @@
   <ItemGroup>
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\ViewMarkdown.Test.csproj">
+      <Project>{ae9bfa2e-d2e7-4b8a-bec6-f32f2cace31a}</Project>
+      <Name>ViewMarkdown.Test</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 		Other similar extension points exist, see Microsoft.Common.targets.
