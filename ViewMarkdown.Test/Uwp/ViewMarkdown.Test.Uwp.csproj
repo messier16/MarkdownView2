@@ -144,11 +144,19 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.5.1.527436" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.0.1" />
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.4" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ViewMarkdown.Test\ViewMarkdown.Test.csproj">
-      <Project>{323BE201-B14E-4189-8F8C-5C9F161A42E3}</Project>
+    <ProjectReference Include="..\..\MarkdownView.Forms.Plugin.Abstractions\ViewMarkdown.Forms.Plugin.Abstractions.csproj">
+      <Project>{7ba0f458-da47-40a2-8b50-1c157d7070c8}</Project>
+      <Name>ViewMarkdown.Forms.Plugin.Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MarkdownView.Forms.Plugin.Uwp\ViewMarkdown.Forms.Plugin.Uwp.csproj">
+      <Project>{0179d6f0-f898-4189-a7d5-ed3bbb85dd92}</Project>
+      <Name>ViewMarkdown.Forms.Plugin.Uwp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\ViewMarkdown.Test.csproj">
+      <Project>{ae9bfa2e-d2e7-4b8a-bec6-f32f2cace31a}</Project>
       <Name>ViewMarkdown.Test</Name>
     </ProjectReference>
   </ItemGroup>

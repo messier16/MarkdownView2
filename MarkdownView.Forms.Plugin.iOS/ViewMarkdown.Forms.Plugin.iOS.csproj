@@ -63,6 +63,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MarkdownView.Forms.Plugin.Abstractions\ViewMarkdown.Forms.Plugin.Abstractions.csproj">
+      <Project>{7ba0f458-da47-40a2-8b50-1c157d7070c8}</Project>
+      <Name>ViewMarkdown.Forms.Plugin.Abstractions</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

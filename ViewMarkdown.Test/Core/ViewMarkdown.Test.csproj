@@ -7,4 +7,8 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.5.1.527436" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\MarkdownView.Forms.Plugin.Abstractions\ViewMarkdown.Forms.Plugin.Abstractions.csproj" />
+  </ItemGroup>
 </Project>
