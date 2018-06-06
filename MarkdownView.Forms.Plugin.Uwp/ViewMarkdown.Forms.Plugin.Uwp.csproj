@@ -119,12 +119,6 @@
       <Version>2.5.1.527436</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MarkdownView.Forms.Plugin.Abstractions\ViewMarkdown.Forms.Plugin.Abstractions.csproj">
-      <Project>{b5801cad-cca2-4455-b8b3-e9e2e7226695}</Project>
-      <Name>ViewMarkdown.Forms.Plugin.Abstractions</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
