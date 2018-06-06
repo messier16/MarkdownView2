@@ -161,8 +161,8 @@
       <IsAppExtension>false</IsAppExtension>
       <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
-    <ProjectReference Include="..\ViewMarkdown.Test\ViewMarkdown.Test.csproj">
-      <Project>{323BE201-B14E-4189-8F8C-5C9F161A42E3}</Project>
+    <ProjectReference Include="..\Core\ViewMarkdown.Test.csproj">
+      <Project>{AE9BFA2E-D2E7-4B8A-BEC6-F32F2CACE31A}</Project>
       <Name>ViewMarkdown.Test</Name>
     </ProjectReference>
   </ItemGroup>
