@@ -1,0 +1,29 @@
+version: '1.0.0.{build}'
+configuration: Release
+before_build:
+  - nuget restore
+artifacts:
+  - path: Xam.Plugins.Forms.MarkdownView.1.0.0.nupkg
+    name: nuget_pack
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+build:
+  project: ViewMarkdown.sln
+  publish_nuget: true
+  publish_nuget_symbols: false
+  include_nuget_references: true
+  verbosity: minimal
+after_build:
+- cmd: >-
+    nuget pack ViewMarkdown.nuspec -Build -IncludeReferencedProjects -Prop Configuration=Release
+deploy:
+  provider: NuGet
+  api_key:
+    secure: XImXaAhmv7juP3N1QLgjU+V2u1+QjEXJnj3mv3U1uCjSzOa8c+LTl2KP3s/ClxhJ
+  artifact: /.*\.nupkg/
+  on:
+    branch: master
