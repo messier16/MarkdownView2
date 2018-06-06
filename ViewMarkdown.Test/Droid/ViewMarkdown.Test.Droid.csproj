@@ -104,6 +104,14 @@
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\MarkdownView.Forms.Plugin.Abstractions\ViewMarkdown.Forms.Plugin.Abstractions.csproj">
+      <Project>{7ba0f458-da47-40a2-8b50-1c157d7070c8}</Project>
+      <Name>ViewMarkdown.Forms.Plugin.Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MarkdownView.Forms.Plugin.Droid\ViewMarkdown.Forms.Plugin.Droid.csproj">
+      <Project>{aeff6ec6-4b01-4cf2-a038-9403ef237a54}</Project>
+      <Name>ViewMarkdown.Forms.Plugin.Droid</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Core\ViewMarkdown.Test.csproj">
       <Project>{ae9bfa2e-d2e7-4b8a-bec6-f32f2cace31a}</Project>
       <Name>ViewMarkdown.Test</Name>
